@@ -1,0 +1,10 @@
+{
+    "name": "gbarker-message-database",
+    "domain": false,
+    "hostname": "gbarker-message-database",
+    "image": "postgres:12",
+    "env": {
+        "POSTGRES_PASSWORD": "@gbarker-postgres-password"
+    },
+    "volumes": ["gbarker_message_database_volume:/var/lib/postgresql/data"]
+}
